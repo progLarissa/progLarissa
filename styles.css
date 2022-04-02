@@ -1,20 +1,31 @@
-img {
+img { /*imagem principal da capa*/
     height: 20em;
     width: 47.6em;
     opacity: 0.6;
 }
-h1 { 
+.contenedor{/*como vai ficar o bloco em cima da imagem principal*/
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.centrado{/*o que vai ficar em cima da imagem*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 { /*Larissa & Nacho*/
     font-family: Georgia;
 }
-h3 {
+h3 {/*versículo*/
     font-family: 'Times New Roman';
     font-size: 25px;
 }
-body {
-    font-size: 28px;
+body { /* tamanho geral da letra*/
+    font-size: 15px;
   }
   
-  ul {
+  ul {/*barra de nav*/
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -24,12 +35,12 @@ body {
     top: 0;
   }
   
-  li {
+  li { /*direção de onde vai começar a barra de nav*/
     float: left;
   }
   
   li a {
-    display: block; /*Permite especificar o preenchimento*/
+    display: block; /*Permite especificar o preenchimento da barra de nav*/
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -37,23 +48,41 @@ body {
     font-family: georgia;
   }
   
-  li a:hover {
+  li a:hover { /*para a mudança de cor da barra de nav*/
     background-color: #111;
   }
   
   .active {
-    background-color: #4CAF50;
+    background-color: #da5802;
   }
 
+body {margin: 0;}
 
-.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
-.centrado{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
 }
