@@ -1,0 +1,108 @@
+CREATE TABLE CASAMENTO(
+    nombre VARCHAR (10) not null,
+    parentezco VARCHAR (10) not null,
+    genero CHAR (1) not null,
+    nacionalidad CHAR (1) not null,
+    queremos CHAR (1) not null,
+    presencia CHAR (1)
+);
+
+ALTER TABLE CASAMENTO
+MODIFY NACIONALIDAD CHAR (3);
+
+ALTER TABLE CASAMENTO
+RENAME COLUMN queremos TO DESEADO;
+
+INSERT INTO CASAMENTO VALUES ('Larissa', 'noiva', 'F', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Nacho', 'noivo', 'M', 'ESP', 'S', 'S'); 
+INSERT INTO CASAMENTO VALUES ('Tania', 'familia', 'F', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Russo', 'familia', 'M', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Gustavo', 'familia', 'M', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Mariló', 'familia', 'F', 'esp', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Pablo', 'familia', 'M', 'esp', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Gonzalo', 'amigo', 'M', 'esp', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Jesús', 'amigo', 'M', 'esp', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Ángel', 'amigo', 'M', 'esp', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Rubén', 'amigo', 'M', 'esp', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Laura', 'amigo', 'F', 'esp', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Carlos', 'amigo', 'M', 'esp', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Cristina', 'amigo', 'F', 'esp', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Juliana', 'amigo', 'F', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Luan', 'amigo', 'M', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Jane', 'familia', 'F', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Cuca', 'familia', 'M', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Lúcia', 'familia', 'F', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Manel', 'familia', 'M', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Leca', 'familia', 'F', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Naldo', 'familia', 'M', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Willian', 'familia', 'M', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Larissa', 'familia', 'F', 'bra', 'N', null);
+INSERT INTO CASAMENTO VALUES ('Weslley', 'familia', 'M', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Carol', 'familia', 'F', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Nicolly', 'familia', 'F', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Kauê', 'familia', 'M', 'bra', 'S', 'S');
+INSERT INTO CASAMENTO VALUES ('Ana', 'familia', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Wilmar', 'familia', 'M', 'bra', 'N', null);
+INSERT INTO CASAMENTO VALUES ('Neinha', 'familia', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Marcio', 'familia', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Marcio Jr', 'familia', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Luiana', 'familia', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Kátia_ir', 'familia', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Victor', 'familia', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Sidney', 'familia', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Taylane', 'familia', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Douglas', 'familia', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Camila', 'familia', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Namo_Cam', 'familia', 'M', 'bra', 'N', null);
+INSERT INTO CASAMENTO VALUES ('Leo', 'familia', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Esposa Leo', 'familia', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Claudia', 'familia', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Santos', 'familia', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Silvia', 'familia', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Du', 'familia', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Wellerson', 'familia', 'M', 'bra', 'N', null);
+INSERT INTO CASAMENTO VALUES ('Namo_Wel', 'familia', 'F', 'bra', 'N', null);
+INSERT INTO CASAMENTO VALUES ('Lucas', 'familia', 'M', 'bra', 'N', null);
+INSERT INTO CASAMENTO VALUES ('Namo Lucas', 'familia', 'F', 'bra', 'N', null);
+INSERT INTO CASAMENTO VALUES ('Raiane', 'familia', 'F', 'bra', 'N', null);
+INSERT INTO CASAMENTO VALUES ('Namo_Rai', 'familia', 'M', 'bra', 'N', null);
+INSERT INTO CASAMENTO VALUES ('Filho_Rai', 'familia', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Wellerson', 'familia', 'M', 'bra', 'N', null);
+INSERT INTO CASAMENTO VALUES ('Kátia_pr', 'familia', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Estela', 'familia', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Thaíssa', 'familia', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Rubens', 'familia', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Esp_Rubens', 'familia', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Fábio', 'familia', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Esp_Fábio', 'familia', 'F', 'bra', 'N', null);
+INSERT INTO CASAMENTO VALUES ('Thamires', 'familia', 'F', 'bra', 'N', null);
+INSERT INTO CASAMENTO VALUES ('Fil_Tham', 'familia', 'M', 'bra', 'N', null);
+INSERT INTO CASAMENTO VALUES ('Isaque', 'familia', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Edvalda', 'familia', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Tarcísio', 'amigo', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Jaque', 'amigo', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Fabricio', 'amigo', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Agnes', 'amigo', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Patrick', 'amigo', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Érica', 'amigo', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Maurício', 'amigo', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Theo', 'amigo', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Espedita', 'amigo', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Severo', 'amigo', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Márcia', 'amigo', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Lívian', 'amigo', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Leticia', 'amigo', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Lucas', 'amigo', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Es_Lucas', 'amigo', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Baby', 'amigo', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Thayane', 'amigo', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Thatiane', 'amigo', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Pablo', 'amigo', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Luisa', 'amigo', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Diego', 'amigo', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Fi_Luisa', 'amigo', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Fi_Luisa', 'amigo', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Thalita', 'amigo', 'F', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Mel', 'amigo', 'F', 'bra', 'N', null
+INSERT INTO CASAMENTO VALUES ('Tio Dede', 'amigo', 'M', 'bra', 'S', null);
+INSERT INTO CASAMENTO VALUES ('Tia Ro', 'amigo', 'F', 'bra', 'S', null);

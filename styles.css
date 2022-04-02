@@ -1,0 +1,59 @@
+img {
+    height: 20em;
+    width: 47.6em;
+    opacity: 0.6;
+}
+h1 { 
+    font-family: Georgia;
+}
+h3 {
+    font-family: 'Times New Roman';
+    font-size: 25px;
+}
+body {
+    font-size: 28px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky; /*para criar uma barra de navegação fixa.*/
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block; /*Permite especificar o preenchimento*/
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: georgia;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

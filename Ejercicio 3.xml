@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--Definición de que es un xml-->
+<!DOCTYPE Eurovision SYSTEM "Ejercicio 3.dtd"> 
+<Eurovision> <!--Elemento raiz único-->
+	<candidatura pais = "Alemania"> <!--instancias con atributo que voy adicionando para hacer la dif con los otros -->
+        <titulos>
+            <titulo lingua = "original">Rockstars</titulo>
+            <titulo lingua = "castellano">Estrellas del rock</titulo>
+        </titulos>
+		<artista>Malik Harris</artista>
+        <idioma>Inglés</idioma>
+        <video>D3FN2umFaM8</video>
+    </candidatura>  
+	<candidatura pais = "España">
+        <titulos>
+            <titulo lingua = "original">SloMo</titulo>
+            <titulo lingua = "castellano">Cámara lenta</titulo>
+        </titulos>
+		<artista>Chanel</artista>
+        <idioma>Inglés</idioma>
+        <idioma>Español</idioma>
+        <video>TO2yGXVQCfo</video>
+    </candidatura>  
+    <candidatura pais = "Finlandia">
+        <titulos>
+            <titulo lingua = "original">Jezebel</titulo>
+            <titulo lingua = "castellano">Jezebel</titulo>
+        </titulos>
+		<artista>The Rasmus</artista>
+        <idioma>Inglés</idioma>
+        <video>XtMfCf3vFbc</video>
+    </candidatura>      
+    <candidatura pais = "Italia">
+        <titulos>
+            <titulo lingua = "original">Brividi</titulo>
+            <titulo lingua = "castellano">Escalofríos</titulo>
+        </titulos>
+		<artista>Mahmood &amp; Blanco</artista>
+        <idioma>Italiano</idioma>
+        <video>4MgMhzfUmiA</video>
+    </candidatura>    
+    <candidatura pais="Ucrania">
+        <titulos>
+            <titulo lingua = "original">Stefania</titulo>
+            <titulo lingua = "castellano">Estefanía</titulo>
+        </titulos>
+		<artista>Kalush Orchstra</artista>
+        <idioma>Ucraniano</idioma>
+        <video>UiEGVYOruLk</video>
+    </candidatura>    
+</Eurovision>    
